@@ -8,6 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script>
+    // Polyfill `process` for browser-only environments to prevent a fatal ReferenceError.
+    // The Gemini SDK expects `process.env.API_KEY` to be available.
+    // This script prevents the app from crashing with a "process is not defined" error.
+    if (typeof process === 'undefined') {
+      window.process = { env: {} };
+    }
+  </script>
   <script type="importmap">
 {
   "imports": {
