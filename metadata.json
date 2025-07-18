@@ -1,0 +1,8 @@
+{
+  "name": "Control de Inventario HUPM",
+  "description": "Una aplicación para gestionar el inventario de TI con seguimiento de entradas/salidas y escaneo de códigos de barras.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}
